@@ -27,8 +27,8 @@ No SIA:
 
 ## Observações
 
-* É uma versão beta (e sempre será !!!). Use por sua conta em risco!
 * A extensão foi desenvolvida e testada em uma máquina com Linux Mint 19.3 Cinnamon e o Google Chrome 91.0.4472.114 64-bits. 
-* Fique a vontade para corrigir possíveis bugs pois é uma extensão open-source.
+* * Fique a vontade para corrigir possíveis bugs (a uma extensão é open-source).
+* É uma versão beta (e sempre será !!!). Use por sua conta em risco!
 
 
