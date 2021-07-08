@@ -1,4 +1,4 @@
-# SIAmes2.0
+# SIAmes 2.0
 
 Extensão para o Google Chrome que estende as funcionalidades do SIA facilitando, por exemplo, o planejamento de disciplinas.
 
