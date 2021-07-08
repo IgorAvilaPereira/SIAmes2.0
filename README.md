@@ -2,6 +2,10 @@
 
 Extensão para o Google Chrome que estende as funcionalidades do SIA facilitando, por exemplo, o planejamento de disciplinas.
 
+Criei este add-on depois de passar bastante trabalho copiando e colando meu programa da disciplina para o SIA. 
+
+Será que não daria para copiar e colar tudo de uma só vez usando uma extensão do Google Chrome? Agora dá!
+
 
 ## Instalação
 
