@@ -4,12 +4,13 @@ Extensão para o SIA para o Google Chrome
 
 ## Instalação
 
-1) Baixar o repositório https://github.com/IgorAvilaPereira/SIAmes2.0/archive/refs/heads/main.zip e descompactar em algum diretório de sua escolha
-2) No Google Chrome entrar em More Tools >> Extensions
-3) Habilitar "Modo Developer mode"
-4) Clicar no botão "Load unpacked"
-5) Buscar a pasta descompactada do SIAmes2.0
-6) E a instalação está completa!!
+1) Baixar o repositório em formato .zip https://github.com/IgorAvilaPereira/SIAmes2.0/archive/refs/heads/main.zip 
+2) Descompactar o .zip em algum diretório de sua escolha
+3) No Google Chrome entrar em More Tools >> Extensions
+4) Habilitar "Modo Developer mode"
+5) Clicar no botão "Load unpacked"
+6) Buscar a pasta descompactada do SIAmes2.0
+7) E a instalação está completa!!
 
 ## Uso
 
