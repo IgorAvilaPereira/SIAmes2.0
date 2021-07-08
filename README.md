@@ -22,7 +22,7 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 No SIA:
 
 1) Acessar "Planejamento >> Alterar"
-2) Buscar ícone da extensão na barra do Google Chrome
+2) Buscar o ícone da extensão na barra do Google Chrome
 3) E usar!!
 
 ## Observações
