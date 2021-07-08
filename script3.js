@@ -1,4 +1,4 @@
-// script que limpa todas as linhas
+// limpar
 
 // ex: aps tem 144 linhas na planilha do sia
 // var totalDeAulas = 144; 
