@@ -11,7 +11,7 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 
 1) Baixar a extensão SIAmes2.0 em formato .zip (https://github.com/IgorAvilaPereira/SIAmes2.0/archive/refs/heads/main.zip)
 2) Descompactar o .zip em algum diretório de sua escolha
-3) No Google Chrome entrar em More Tools >> Extensions
+3) No Google Chrome entrar em "More Tools >> Extensions"
 4) Habilitar a opção "Developer mode"
 5) Clicar no botão "Load unpacked"
 6) Buscar a pasta descompactada do SIAmes2.0
