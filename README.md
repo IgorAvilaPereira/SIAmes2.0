@@ -13,7 +13,7 @@ Extensão para o SIA para o Google Chrome
 
 ## Uso
 
-No SIA
+No SIA:
 
 1) Planejamento >> Alterar
 2) Buscar o ícone da extensão na barra do Google Chrome
