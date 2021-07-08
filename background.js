@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     // limpar
     document.querySelector("#btn2").addEventListener("click", function () { 
-      var totalDeAulas = prompt("Qtde Total de Aulas/Linhas:"); 
+      var totalDeAulas = prompt("Quantas linhas da tabela deseja apagar?"); 
       var codigo = "var totalDeAulas = '"+totalDeAulas+"';";      
       chrome.tabs.executeScript({code: codigo}, function () {
               chrome.tabs.executeScript( {file: "script3.js"});
