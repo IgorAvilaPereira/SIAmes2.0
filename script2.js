@@ -26,7 +26,7 @@ while(i < qtde){
             <option value='2' "+((etapa == 2) ? 'selected' : '')+">2</option> \
             </select>";
         } else {
-            alert('ERRO: Nas disciplinas semestrais a etapa deve ser <= 2 (nas anuais <= 4)');
+            alert('ERRO: Nas disciplinas semestrais a etapa deve ser <= 2 (e nas anuais <= 4)');
             break;
         }
         document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector('#dt_prevista_'+(i+1)).innerHTML = "<input name='dt_prevista[]' type='text' class='mascData hasDatepicker' value='"+data+"' style='width: 90px; text-align: center;' maxlength='10'>";
