@@ -57,5 +57,5 @@ if (erroEtapa) {
     alert('[ERRO] SIAmes 2.0\n\nNas disciplinas semestrais:\n* Etapa deve ser <= 2\nNas disciplinas anuais:\n* Etapa deve ser <= 4\n\n=> VERIFICAR: aula(s): '+vetErroEtapa.join(','));
 }
 if (erroData) {    
-    alert('[ERRO] SIAmes 2.0\n\nDatas incorretas\n\n=> VERIFICAR: data(s) da(s) aula(s): '+vetErroData.join(','));
+    alert('[ERRO] SIAmes 2.0\n\nDatas incorretas:\n\n=> VERIFICAR: data(s) da(s) aula(s): '+vetErroData.join(','));
 }
