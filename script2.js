@@ -4,6 +4,7 @@ var qtde = vetDiario.length;
 var ciclo = document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector("#linha_id_ciclo_letivo").innerHTML;
 var i = 0;
 var erroEtapa = false;
+var vetErroEtapa = [];
 while(i < qtde){
     linha = vetDiario[i].split(";");
     if (linha.length != 1){
@@ -28,13 +29,14 @@ while(i < qtde){
             </select>";
         } else {
             erroEtapa = true;
+            vetErroEtapa.push(i+1);
         }
         document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector('#dt_prevista_'+(i+1)).innerHTML = "<input name='dt_prevista[]' type='text' class='mascData hasDatepicker' value='"+data+"' style='width: 90px; text-align: center;' maxlength='10'>";
         document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector('#ds_atividade_'+(i+1)).innerHTML = "<input name='ds_atividade[]' type='text' value='"+atividade+"' style='width:690px'>";
     }
     i++;
 }
-if (erroEtapa) {
-    alert('[ERRO] SIAmes 2.0\n\nNas disciplinas semestrais:\n* etapa deve ser <= 2\nNas disciplinas anuais:\n* etapa deve ser <= 4');
+if (erroEtapa) {    
+    alert('[ERRO] SIAmes 2.0\n\nNas disciplinas semestrais:\n* etapa deve ser <= 2\nNas disciplinas anuais:\n* etapa deve ser <= 4\n\nAulas '+vetErroEtapa.join(',')+" apresentam problema.");
     // break;
 }
