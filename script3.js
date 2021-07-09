@@ -1,7 +1,7 @@
 // limpar
 var nodelistToArray = Array.prototype.slice.call(document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelectorAll("[id*='ds_atividade_']"));
 var totalDeAulas = nodelistToArray.length;
-// alert(totalDeAulas);
+
 var i = 0;
 while(i < totalDeAulas){
         etapa = "";
