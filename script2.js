@@ -5,6 +5,10 @@ var ciclo = document.querySelector("#sia3app").querySelector("#frame_aplicacao")
 var i = 0;
 var erroEtapa = false;
 var vetErroEtapa = [];
+var erroData = false;
+var vetErroData = [];
+var patternValidaData = /^(((0[1-9]|[12][0-9]|3[01])([-.\/])(0[13578]|10|12)([-.\/])(\d{4}))|(([0][1-9]|[12][0-9]|30)([-.\/])(0[469]|11)([-.\/])(\d{4}))|((0[1-9]|1[0-9]|2[0-8])([-.\/])(02)([-.\/])(\d{4}))|((29)(\.|-|\/)(02)([-.\/])([02468][048]00))|((29)([-.\/])(02)([-.\/])([13579][26]00))|((29)([-.\/])(02)([-.\/])([0-9][0-9][0][48]))|((29)([-.\/])(02)([-.\/])([0-9][0-9][2468][048]))|((29)([-.\/])(02)([-.\/])([0-9][0-9][13579][26])))$/;
+
 while(i < qtde){
     linha = vetDiario[i].split(";");
     if (linha.length != 1){
@@ -31,11 +35,19 @@ while(i < qtde){
             erroEtapa = true;
             vetErroEtapa.push(i+1);
         }
-        document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector('#dt_prevista_'+(i+1)).innerHTML = "<input name='dt_prevista[]' type='text' class='mascData hasDatepicker' value='"+data+"' style='width: 90px; text-align: center;' maxlength='10'>";
+        if(patternValidaData.test(data)){        
+            document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector('#dt_prevista_'+(i+1)).innerHTML = "<input name='dt_prevista[]' type='text' class='mascData hasDatepicker' value='"+data+"' style='width: 90px; text-align: center;' maxlength='10'>";
+        } else {
+            erroData = true;
+            vetErroData.push(i+1);
+        }
         document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector('#ds_atividade_'+(i+1)).innerHTML = "<input name='ds_atividade[]' type='text' value='"+atividade+"' style='width:690px'>";
     }
     i++;
 }
 if (erroEtapa) {    
     alert('[ERRO] SIAmes 2.0\n\nNas disciplinas semestrais:\n* Etapa deve ser <= 2\nNas disciplinas anuais:\n* Etapa deve ser <= 4\n\n=> VERIFICAR aula(s): '+vetErroEtapa.join(','));
+}
+if (erroData) {    
+    alert('[ERRO] SIAmes 2.0\n\nDatas incorretas\n\n=> VERIFICAR datas da(s) aula(s): '+vetErroData.join(','));
 }
