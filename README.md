@@ -22,8 +22,10 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 No SIA:
 
 1) Acessar "Planejamento >> Alterar"
-2) Buscar o ícone da extensão na barra do Google Chrome
-3) E usar!!
+2) Clique no ícone da extensão na barra do Google Chrome
+3) Cole seu planejamento na caixa de texto da extensão. O planejamento deve seguir o formato de exemplo descrito na própria extensão
+4) E clique no botão "Importar"
+
 
 ## Observações
 
