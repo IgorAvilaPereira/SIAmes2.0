@@ -1,4 +1,4 @@
-alert('[BETA] Datas Previstas == Datas das Aulas\n1) Acesse o "Diário de Classe Online" da disciplina desejada\n2) Selecione todas as linhas da tabela do Diário de Classe\n3) Escolha a opção "Alteração Múltipla" \n 4) Abra novamente o SIAmes 2.0 (colocando as atividades planejadas novamente na caixa de texto)\n5) Clique neste mesmo botão e veja que as datas previstas foram replicadas para as datas das aulas\n7) Basta agora submeter o formulário!');
+alert('[BETA] Datas Previstas == Datas de Realização das Aulas\n1) Acesse o "Diário de Classe Online" da disciplina desejada\n2) Selecione todas as linhas da tabela do Diário de Classe\n3) Escolha a opção "Alteração Múltipla" \n 4) Abra novamente o SIAmes 2.0 (colocando novamente as atividades planejadas na caixa de texto da extensão)\n5) Clique neste mesmo botão e veja que as datas previstas foram replicadas para as datas das aulas\n7) Agora basta submeter o formulário do SIA e tá pronto!');
 
 var vetDiario = diario.split("<quebra>");
 var qtde = vetDiario.length;
@@ -14,7 +14,12 @@ var patternValidaData = /^(((0[1-9]|[12][0-9]|3[01])([-.\/])(0[13578]|10|12)([-.
         linha = vetDiario[i].split(";");
         if (linha.length != 1){
             data = linha[1];
-            document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelectorAll("[id^=dt_aula]")[i].value = data;
+            // if(patternValidaData.test(data)){       
+                document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelectorAll("[id^=dt_aula]")[i].value = data;
+            // } else {
+            //     erroData = true;
+            //     vetErroData.push(i+1);
+            // }    
         }
         i++;
     }
@@ -24,3 +29,6 @@ try {
 } catch (error) {
     
 }
+// if (erroData) {    
+//     alert('[ERRO] SIAmes 2.0\n\nDatas incorretas:\n\n=> VERIFICAR: data(s) da(s) aula(s): '+vetErroData.join(','));
+// }
