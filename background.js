@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
           })
       // })
 
-      /*
+      
       // diario multiplo
-  document.querySelector("#btn3").addEventListener("click", function () { 
+    document.querySelector("#btn3").addEventListener("click", function () { 
     var conteudo = document.querySelector("#conteudo").value.trim().replace( /[\r\n]+/gm, "<quebra>" ).trim();           
     var codigo = "var diario = '"+conteudo+"';";
     chrome.tabs.executeScript({code: codigo}, function () {
             chrome.tabs.executeScript( {file: "script3.js"});
         })
-    })*/
+    })
 })
