@@ -19,9 +19,7 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 
 ## Uso
 
-No SIA:
-
-1) Acessar "Planejamento >> Alterar"
+1) No SIA acesse "Planejamento >> Alterar"
 2) Clique no ícone da extensão na barra do Google Chrome
 3) Cole seu planejamento na caixa de texto seguindo o formato de exemplo descrito na própria extensão
 4) E clique no botão "Importar"
