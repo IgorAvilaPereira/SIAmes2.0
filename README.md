@@ -30,5 +30,3 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 * A extensão foi desenvolvida e testada em uma máquina com Linux Mint 19.3 Cinnamon e Google Chrome 91.0.4472.114 64-bits. 
 * Fique a vontade para corrigir possíveis bugs (a extensão é open-source).
 * É uma versão beta (e sempre será !!!). Use por sua conta em risco!
-
-
