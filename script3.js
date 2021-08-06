@@ -1,4 +1,4 @@
-alert('[BETA] Datas Previstas == Data da Aula\n1) Acesse o "Diário de Classe Online" >> "Acessar"\n2) Selecione todas as linhas da tabela\n3) Escolha a opção "Alteração Multipla" \n 4) Abra novamente o SIAmes 2.0 (colocando todas atividades planejadas novamente na caixa de texto)\n5) Clique novamente neste botão\n6) Assim, todas as datas previstas no planejamento serão replicadas para as datas das aulas.');
+alert('[BETA] Datas Previstas == Datas das Aulas\n1) Acesse o "Diário de Classe Online" da disciplina previamente já planejada\n2) Selecione todas as linhas da tabela do Diário\n3) Escolha a opção "Alteração Multipla" \n 4) Abra novamente o SIAmes 2.0 (colocando as atividades planejadas novamente na caixa de texto)\n5) Clique neste botão\n6) Assim, todas as datas previstas no planejamento serão replicadas para as datas das aulas.');
 
 var vetDiario = diario.split("<quebra>");
 var qtde = vetDiario.length;
