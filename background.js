@@ -1,3 +1,7 @@
+/*
+function script4(ciclo){
+}*/
+
 function script3(conteudo) {
   alert('[BETA] Datas Previstas == Datas de Realização das Aulas\n1) Acesse o "Diário de Classe Online" da disciplina desejada\n2) No "Diário" selecione todas as linhas de um mesmo ciclo\n3) Escolha a opção "Alteração Múltipla" \n 4) No SIAmes: insira as atividades deste ciclo na caixa de texto\n5) Clique neste mesmo botão e veja que as datas previstas foram replicadas para as datas das aulas\n7) Basta submeter o formulário do SIA e tá pronto\n8) Agora repita para os demais ciclos!');
 
@@ -35,8 +39,8 @@ function script3(conteudo) {
   // }
 }
 
-function script2(totalDeAulas) {
-// function script2() {
+// function script2(totalDeAulas) {
+function script2() {
   // limpar
   var nodelistToArray = Array.prototype.slice.call(document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelectorAll("[id*='ds_atividade_']"));
   var totalDeAulas = nodelistToArray.length;
@@ -132,22 +136,20 @@ document.addEventListener("DOMContentLoaded", function () {
         func: script1,
         args: [conteudo],
       });
-    })();
-
+    })()});
     
     // limpar
     document.querySelector("#btn2").addEventListener("click", function () {
-      var totalDeAulas = prompt("Quantas linhas da tabela deseja apagar?");
+      // var totalDeAulas = prompt("Quantas linhas da tabela deseja apagar?");
       (async () => {
         const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
         chrome.scripting.executeScript({
           target: { tabId: tab.id },
-          func: script2,
-          args: [totalDeAulas]
+          func: script2/*,
+          args: [totalDeAulas]*/
         });
-      })()
-    });
-    
+      })()});
+
     // diario multiplo
     document.querySelector("#btn3").addEventListener("click", function () {
       var conteudo = document.querySelector("#conteudo").value.trim().replace(/[\r\n]+/gm, "<quebra>").trim();
@@ -155,9 +157,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
         chrome.scripting.executeScript({
           target: { tabId: tab.id },
-          func: script3,
+          func: script1,
           args: [conteudo],
         });
-      })()
-    });
-})});
+      })()});
+
+      /*
+         // diario multiplo
+    document.querySelector("#btn4").addEventListener("click", function () {
+      var ciclo = prompt("Qual ciclo?");
+      (async () => {
+        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        chrome.scripting.executeScript({
+          target: { tabId: tab.id },
+          func: script4,
+          args: [ciclo],
+        });
+      })()});*/
+
+
+    });   
