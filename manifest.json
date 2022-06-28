@@ -1,17 +1,25 @@
 {
-    "browser_action": {
-        "default_popup": "index.html"
-    },
     "name": "SIAmes 2.0",
     "description": "SIAmes 2.0",
-    "icons": { "16": "icon.png",
-        "48": "icon.png",
-       "128": "icon.png" },
-    "permissions": [
-        "tabs",
-        "http://*/*",
-        "https://*/*"
-    ],
     "version": "2.0",
-    "manifest_version": 2
-}   
+    "manifest_version": 3,
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+       "128": "icon.png" 
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png" 
+        }
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ]    
+}

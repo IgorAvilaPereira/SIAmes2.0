@@ -1,5 +1,5 @@
 // importar
-var vetDiario = diario.split("<quebra>");
+var vetDiario = conteudo.split("<quebra>");
 var qtde = vetDiario.length;
 var ciclo = document.querySelector("#sia3app").querySelector("#frame_aplicacao").contentWindow.document.querySelector("#linha_id_ciclo_letivo").innerHTML;
 
